@@ -163,7 +163,7 @@ jobs:
 
     - name: Download Tests Report Artifact
       if: fromJSON(env.MERGING_TO_MAIN)
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: dotnet-tests-report
         path: dotnet-tests-report/
@@ -216,7 +216,7 @@ jobs:
 
     - name: Download API Docs Artifact
       if: fromJSON(env.MERGING_TO_MAIN)
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: dotnet-docs-api
         path: dotnet-docs-api/
